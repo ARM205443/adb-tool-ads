@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#05070d">
+<title>ล้างเครื่องเสร็จแล้ว</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{
+    min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    background:radial-gradient(ellipse at 50% 30%,#06261a 0%,#05070d 70%);
+    color:#fff;font-family:'Segoe UI','Noto Sans Thai',sans-serif;text-align:center;
+    padding:20px;overflow:hidden;position:relative;
+    -webkit-user-select:none;user-select:none
+  }
+  body::before{
+    content:"";position:absolute;inset:0;
+    background-image:linear-gradient(rgba(0,255,150,.06) 1px,transparent 1px),
+                     linear-gradient(90deg,rgba(0,255,150,.06) 1px,transparent 1px);
+    background-size:40px 40px;
+    mask-image:radial-gradient(circle at 50% 40%,#000 20%,transparent 75%);
+    -webkit-mask-image:radial-gradient(circle at 50% 40%,#000 20%,transparent 75%)
+  }
+  .brand{position:relative;font-size:13px;letter-spacing:6px;color:#3ee6a0;margin-bottom:26px;opacity:.9}
+  .ring{
+    position:relative;width:200px;height:200px;border-radius:50%;margin-bottom:34px;
+    border:3px solid #1fe08f;display:flex;align-items:center;justify-content:center;
+    background:radial-gradient(circle,#082d20 0%,#040d0a 100%);
+    box-shadow:0 0 40px rgba(31,224,143,.55),inset 0 0 40px rgba(31,224,143,.25);
+    animation:glow 2s ease-in-out infinite
+  }
+  .ring svg{width:110px;height:110px}
+  .ring path{fill:none;stroke:#1fe08f;stroke-width:9;stroke-linecap:round;stroke-linejoin:round;
+             stroke-dasharray:120;stroke-dashoffset:120;animation:draw .8s .3s ease-out forwards}
+  @keyframes draw{to{stroke-dashoffset:0}}
+  @keyframes glow{0%,100%{box-shadow:0 0 30px rgba(31,224,143,.4),inset 0 0 40px rgba(31,224,143,.2)}
+                  50%{box-shadow:0 0 60px rgba(31,224,143,.75),inset 0 0 40px rgba(31,224,143,.3)}}
+  h1{position:relative;font-size:clamp(28px,7vw,42px);font-weight:800;
+     background:linear-gradient(90deg,#3ee6a0,#fff,#3ee6a0);-webkit-background-clip:text;
+     background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:10px}
+  .sub{position:relative;color:#9fd1bb;font-size:clamp(15px,4vw,18px);margin-bottom:28px}
+  .ok{
+    position:relative;border:2px solid #1fe08f;border-radius:16px;padding:16px 26px;
+    background:rgba(31,224,143,.10)
+  }
+  .ok b{display:block;font-size:clamp(20px,5.5vw,26px);color:#3ee6a0}
+  .ok span{display:block;margin-top:4px;font-size:clamp(13px,3.6vw,15px);color:#a8f0d0}
+  .foot{position:relative;margin-top:26px;font-size:12px;color:#5d8272;letter-spacing:1px}
+</style>
+</head>
+<body>
+  <div class="brand">ADB TOOL • MALWARE CLEANER</div>
 
+  <div class="ring">
+    <svg viewBox="0 0 100 100"><path d="M24 52 L43 70 L77 32"/></svg>
+  </div>
+
+  <h1>ล้างเครื่องเสร็จแล้ว</h1>
+  <div class="sub">กำจัดแอปอันตรายเรียบร้อย ขอบคุณที่ใช้บริการ</div>
+
+  <div class="ok">
+    <b>✔ ถอดสาย USB ได้เลย</b>
+    <span>เครื่องของคุณพร้อมใช้งานแล้ว</span>
+  </div>
+
+  <div class="foot">PRODUCT OF THAILAND</div>
+</body>
+</html>
